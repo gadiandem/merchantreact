@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "/oauth2/*"
+  to = "https://merchant.flocash.com/oauth2/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://merchant.flocash.com/api/:splat"
+  status = 200
+  force = true
+
+# Ensure React SPA routes work (e.g., /sign-in, /dashboard, etc.)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

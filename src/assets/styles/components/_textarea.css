@@ -1,0 +1,52 @@
+.textarea {
+    @apply border
+      border-gray-100 
+      dark:border-gray-700
+      bg-gray-100 
+      dark:bg-gray-700 
+      rounded-xl 
+      w-full 
+      py-2 px-3
+      focus:outline-none 
+      focus:ring-1 
+      focus-within:ring-1
+      focus:bg-transparent
+      focus:dark:bg-transparent
+      appearance-none 
+      transition 
+      duration-150 
+      text-gray-800
+      dark:text-gray-100
+      font-semibold
+      resize-none
+      read-only:focus:ring-0
+      read-only:focus:border-transparent
+      read-only:focus:bg-gray-100
+      read-only:focus:dark:bg-gray-700
+      ease-in-out;
+  
+    &::placeholder {
+      @apply text-gray-400;
+    }
+  
+    &.textarea-invalid {
+      @apply focus:ring-1 focus:ring-error focus:border-error focus:bg-transparent bg-error-subtle focus-within:ring-1 focus-within:ring-error focus-within:border-error focus-within:bg-transparent;
+  
+      &::placeholder {
+        @apply text-error;
+      }
+    }
+  
+    &.textarea-lg {
+      @apply text-lg;
+    }
+  }
+  
+  .textarea-wrapper {
+    @apply relative w-full flex;
+  }
+  
+  .textarea-disabled {
+    @apply opacity-50 !cursor-not-allowed;
+  }
+  

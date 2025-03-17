@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      {
+        "source": "/oauth2/:path*",
+        "destination": "https://merchant.flocash.com/oauth2/:path*"
+      },
+      {
+        "source": "/api/:path*",
+        "destination": "https://merchant.flocash.com/api/:path*"
+      }
+    ]
+  }
+  
